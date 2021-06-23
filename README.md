@@ -1,21 +1,29 @@
-# paint-bucket-simulator
+<h1 align='center'>Paint Bucket Simulator</h1>
 
-<h4 align="center">A simple typescript program to solve the flood fill algorithm!</h4>
+<div align='center'>
+  <img alt='Paint Bucket Simulator Logo' src='https://raw.githubusercontent.com/AlvaroIsrael/paint-bucket-simulator/main/src/assets/paint-bucket-simulator.gif'/>
+</div>
 
-<p align="center">
-  <a href="#-challenge">Challenge</a> •
-  <a href="#-technologies-used">Technologies Used</a> •
-  <a href="#-how-to-use">How To Use</a> •
-  <a href="#-license">License</a>
-</p>
+<h4 align='center'>A simple typescript program to solve the flood fill algorithm!</h4>
 
-<p align="center">Made with ❤️ by Alvaro Israel 👏🏻 <a href="https://www.linkedin.com/in/alvaroisraeldesenvolvedor/">Get in Touch!</a></p>
+<div align='center'>
+  <a href='#-challenge'>Challenge</a> •
+  <a href='#-technologies-used'>Technologies Used</a> •
+  <a href='#-how-to-use'>How To Use</a> •
+  <a href='#-how-to-test'>How To Test</a> •
+  <a href='#-license'>License</a>
+</div>
+
+<h4 align='center'>Made with ❤️ by Alvaro Israel 👏🏻 <a href='https://www.linkedin.com/in/alvaroisraeldesenvolvedor/'>
+Get in Touch!</a></h4>
 
 ## 💡 Challenge
 
-Implementar a funcionalidade semelhante ao “balde de tinta” do MS-Paint. O programa representa imagens utilizando
-matrizes de caracteres, sendo que cada valor da matriz representa um pixel e letras e símbolos representam as diferentes
-cores. Por exemplo, a seguinte matriz 4x6 representa a letra P na cor '#', com cor de fundo '.'.
+This challenge consists of implementing the behavior similar to the 'paint bucket tool' of MS-Paint. The program should
+hold an array of symbols and characters representing the shape of an image. With each array value representing a pixel
+in that image. Each pixel should have a color and, identical characters or symbols would represent the same color. For
+example: The following 4x6 matrix represents the image of the letter 'P', collered by '#', having the background color
+of '.'.
 
 ```bash
 .###..
@@ -24,52 +32,52 @@ cores. Por exemplo, a seguinte matriz 4x6 representa a letra P na cor '#', com c
 .#....
 ```
 
-Sua subrotina deve receber um pixel e uma nova cor e pintar a região desse pixel com a nova cor, como a ferramenta
-“balde de tinta” do MS-Paint.
+The program should recieve one pixel (from that image), a new color, and then be able to paint the correct adjacent
+region filled with that same pixel's color, exactly like the 'paint bucket tool' of MS-Paint does.
 
-Exemplos:<br>
-Pixel (0,1) e nova cor 'o':
+Examples:<br>
+Pixel (0, 1) and new color 'o':
 
 ```bash
-# Antes:
+# Previously:
 .###..
 .#..#.
 .###..
 .#....
 
-# Depois:
+# Afterwards:
 .ooo..
 .o..#.
 .ooo..
 .o....
 ```
 
-Pixel (1,3) e nova cor 'o':
+Pixel (1,3) and new color 'o':
 
 ```bash
-# Antes:
+# Previously:
 .###.
 .#..#.
 .###.
 .#....
 
-# Depois:
+# Afterwards:
 .###..
 .#oo#.
 .###..
 .#....
 ```
 
-Pixel (1,3) e nova cor '#':
+Pixel (1,3) and new color '#':
 
 ```bash
-# Antes:
+# Previously:
 .###..
 .#..#.
 .###..
 .#....
 
-# Depois:
+# Afterwards:
 .###..
 .####.
 .###..
@@ -100,6 +108,19 @@ $ yarn install
 
 # Run the app
 $ yarn start
+```
+
+## 🎯 How to Test
+
+```bash
+# Open up terminal and run
+$ yarn test
+```
+
+Code coverage html report can be found at:
+
+```
+./paint-bucket-simulator/coverage/lcov-report/index.html
 ```
 
 ## 🧾 License
