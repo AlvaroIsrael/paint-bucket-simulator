@@ -4,12 +4,17 @@
   "description": "A simple typescript program to solve the flood fill algorithm!",
   "author": "Alvaro Israel Nunes Leite <israel.nunes.leite@gmail.com>",
   "license": "AGPL-3.0-or-later",
-  "keywords": [],
+  "keywords": [
+    "floodfill",
+    "typescript",
+    "paintbucket"
+  ],
+  "type": "module",
   "main": "main.ts",
   "scripts": {
     "build": "tsc",
     "start": "ts-node-dev --clear --quiet --inspect --transpile-only --ignore-watch node_modules src/main.ts",
-    "test": "jest --coverage --watchAll=false"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --coverage --watchAll=false --config ./jest.config.ts"
   },
   "repository": {
     "type": "git",
