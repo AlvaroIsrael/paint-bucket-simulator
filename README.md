@@ -22,7 +22,7 @@ Get in Touch!</a></h4>
 This challenge consists of implementing the behavior similar to the 'paint bucket tool' of MS-Paint. The program should
 hold an array of symbols and characters representing the shape of an image. With each array value representing a pixel
 in that image. Each pixel should have a color and, identical characters or symbols would represent the same color. For
-example: The following 4x6 matrix represents the image of the letter 'P', collered by '#', having the background color
+example: The following 4x6 matrix represents the image of the letter 'P', collored by '#', having the background color
 of '.'.
 
 ```bash
